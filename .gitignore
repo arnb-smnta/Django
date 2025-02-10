@@ -1,0 +1,47 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+*.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Django-specific
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+local_settings.py
+.env
+*.env
+
+# VS Code settings
+.vscode/
+
+# IDEs & editors
+.idea/
+*.swp
+*~.swo
+*~.swn
+*~.sws
+
+# Byte-compiled / packaged
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Docker
+*.pid
+.dockerignore
+
+# Node.js (if using npm/yarn for frontend)
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
