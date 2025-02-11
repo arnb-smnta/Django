@@ -1,5 +1,7 @@
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import User  # Add this import
+
 # Create your models here.
 
 
@@ -18,3 +20,10 @@ class ChaiVariety(models.Model):
     def __str__(self):
         return self.name
 
+#one to many
+
+
+class review(models.model):
+    chai=models.ForeignKey(ChaiVariety,on_delete=models.CASCADE,related_name="reviews")
+    user=models.ForeignKey(User,on_delete=models.CASCADE,related_name="reviews")
+    
